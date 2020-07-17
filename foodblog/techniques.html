@@ -1,0 +1,187 @@
+<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>TECHNIQUE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../lib/w3.css">
+</head>
+    <style>
+        body {
+            background: url("https://www.pacificfirstaid.ca/wp-content/uploads/2018/11/salad-2068220_960_720.jpg") no-repeat center fixed;
+            background-size: cover;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a,
+        .dropbtn {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        li a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: rgb(248, 64, 64);
+        }
+        
+        li.dropdown {
+            display: inline-block;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        #container {
+            width: 100%;
+            height: 400px;
+        }
+        
+        .texcont {
+            -webkit-column-count: 3;
+            -moz-column-count: 3;
+            column-count: 3;
+            -webkit-column-gap: 40px;
+            -moz-column-gap: 40px;
+            column-gap: 40px;
+            -webkit-column-rule-style: solid;
+            -moz-column-rule-style: solid;
+            column-rule-style: solid;
+            -webkit-column-rule-width: 1px;
+            -moz-column-rule-width: 1px;
+            column-rule-width: 1px;
+            -webkit-column-rule-color: rgb(248, 64, 64);
+            -moz-column-rule-color: rgb(248, 64, 64);
+            column-rule-color: rgb(248, 64, 64);
+            color: white;
+        }
+    </style>
+
+    <body>
+        <ul>
+            <li><b><a href="main.html">Home</a></b></li>
+            <li><b>
+                        <a href="#techniques">Techniques
+                            </a></b>
+            </li>
+            <li class="dropdown"><b>
+                <a href="javascript:void(0)" class="dropbtn">Recipes</a></b>
+                <div class="dropdown-content">
+                    <a href="chicken.html">Chicken</a>
+                    <a href="pizza.html">Pizza</a>
+                    <a href="cocktails.html">Cocktails</a>
+                </div>
+            </li>
+
+            <li><b><a href="contactus.html">Contact us</a></b></li>
+        </ul>
+        <hr align="left" width="50%" color="red">
+
+        <h2 style="font-size: 250% ; text-align:left; color:white">#BREAD </h2>
+        <div class="w3-content" style="max-width:800px;position:relative">
+
+            <img class="mySlides" src="q2.jpg" style="width:50%;height: 50%;border-radius: 50px;border: 10px solid white; margin-left: 3%">
+            <img class="mySlides" src="q1.jpg" style="width:50%;height: 50%;border-radius: 50px;border: 10px solid  white;margin-left: 3%">
+            <img class="mySlides" src="q3.jpg" style="width:50%;height: 50%;border-radius: 50px;border: 10px solid  white;margin-left: 3%">
+            <img class="mySlides" src="q4.jpg" style="width:50%;height: 50%;border-radius: 50px;border: 10px solid  white;margin-left: 3%">
+
+            <a class="w3-btn-floating" style="position:absolute;top:45%;left:50px" onclick="plusDivs(-1)">❮</a>
+            <a class="w3-btn-floating" style="position:absolute;top:45%; ;right: 380px" onclick="plusDivs(1)">❯</a>
+
+        </div>
+
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                if (n > x.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = x.length
+                };
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                x[slideIndex - 1].style.display = "block";
+            }
+        </script>
+
+        <p style="font-size: 150%;color: white"><b>Here are the most basic cooking techniques to help you survive your first culinary year as a university student.</b></p>
+
+        <div class="texcont" style="background-color: black;border-radius: 20px;border:5px solid white;">
+            <u><b>Baking:</b></u> This involves applying a dry convection heat to your food in an enclosed environment. The dry heat involved in the baking process makes the outside of the food go brown, and keeps the moisture locked in. Baking is regularly
+            used for cooking pastries, bread and desserts.<br>
+            <u><b>Frying:</b></u> This means cooking your food in fat – there are several variations of frying: Deep-frying, where the food is completely immersed in hot oil Stir-frying, where you fry the food very quickly on a high heat in a oiled pan
+            Pan-frying, where food is cooked in a frying pan with oil; and Sauteing, where the food is browned on one side and then the other with a small quantity of fat or oil. Frying is one of the quickest ways to cook food, with temperatures typically
+            reaching between 175 – 225ºC.<br>
+            <u><b>Roasting:</b></u> Roasting is basically a high heat form of baking, where your food gets drier and browner on the outside by initial exposure to a temperature of over 500F. This prevents most of the moisture being cooked out of the food.
+            The temperature is then lowered to between 425 and 450F to cook through the meat or vegetables. Grilling This is a fast, dry and very hot way of cooking, where the food is placed under an intense radiant heat. You can use various sources of
+            heat for grilling: wood burning, coals, gas flame, or electric heating. Before grilling, food can be marinaded or seasoned. A similar method to grilling is broiling, where the heat source originates from the top instead of the bottom. Steaming
+            This means cooking your food in water vapour over boiling water. For this, it’s handy to have a steamer, which consists of a vessel with a perforated bottom placed on top of another containing water. Steam rises as the water boils, cooking
+            the food in the perforated vessel above.<br>
+            <u><b>Poaching
+</b></u> This involves a small amount of hot liquid, ideally at a temperature between 160 and 180F. The cooking liquid is normally water, but you can also use broth, stock, milk or juice. Common foods cooked by poaching include fish, eggs
+            and fruit.
+            <br>
+            <u><b>Simmering</b></u> This involves cooking liquid on top of a stove in a pot or pan. It should be carried out on a low heat, and you will see bubbles appearing on the surface of the liquid as your dish cooks.<br>
+            <u><b>Broiling</b></u> Similar to grilling, the heat source comes directly from the top. You should be able to adjust your oven setting to broiling, but be careful, as this cooking methods works quickly and your meal could easily become burned.<br>
+            <u><b>Blanching</b></u> Here the food is part-cooked, and then immediately submerged in ice cold water to stop the cooking process.<br>
+            <u><b>Braising</b></u> First the food is sauted or seared, and then simmered in liquid for a long period of time until tender. Pot roasts, stews and casseroles can be cooked in this way if they contain larger food items such as poultry legs.<br>
+            <u><b>Stewing</b></u> Again, the food is sauted or seared first, and then cooked in liquid, but normally uses smaller ingredients such as chopped meats or vegetables.
+
+        </div>
+        <br><br>
+        <hr style="color: red;width: 30%;" align=center ">
+        <br><br>
+        <center>
+            <img src="i1.jpg " style="width: 50px;height:50px;border-radius: 50% ">
+            <img src="i2.jpg " style=" width: 50px;height:50px;border-radius: 50% ">
+            <img src="i3.jpg " style="width: 50px;height:50px;border-radius: 50% ">
+        </center>
+        <br>
+    </body>
+
+</html>
